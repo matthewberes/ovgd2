@@ -11,7 +11,7 @@
   
   .logo {
     display: inline-block;
-    border-radius: 50%; border: solid 1px;
+    border-radius: 50%;
     width: 150px;
     height: 150px; 
     margin-left: 20px;
@@ -34,7 +34,6 @@
   }
   
   .fa {
-    margin-bottom: 20px;
     font-size: 32pt;
     width: 40px;
     text-align: center;
@@ -56,13 +55,20 @@
     color: white;
   
   }
+
+  .first-row {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5e7e7;
+    width: 100%;
+  }
   
   .carousel {
   display: flex;
   justify-content: space-between;
   width: 800px;
   height: 400px;
-  margin-top: 20px;
+  margin: 20px;
   background-position: center;align-items: center; 
   }   
   
@@ -98,7 +104,7 @@
   }
 
   h2 {
-    font-size: 24pt;
+    font-size: 22pt;
   }
 
   p {
@@ -106,7 +112,30 @@
   }
 
   .pitch {
+    margin-top: 35px;
+    margin-left: 10px;
     text-align: center;
     width: 600px
   }
+
+  button {
+    width: 275px;
+    height: 50px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16pt;
+    background-color: #fc5553;
+    border: none;
+    border-radius: 3px;
+    color: #fafafa;
+    transition: background-color 200ms linear;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #fb7877;
+  }
   
+
+  sup {
+    font-size: 8pt;
+  }
