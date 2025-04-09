@@ -59,7 +59,6 @@
   .first-row {
     display: flex;
     justify-content: space-around;
-    background-color: #f5e7e7;
     width: 100%;
   }
   
@@ -98,24 +97,41 @@
     opacity: .8
   }
 
-  h2, p{
+  p{
     font-family: Roboto, "Helvetica Neue", sans-serif;
     color: #232b2b;
   }
 
   h2 {
-    font-size: 22pt;
+    margin-top: 0px;
+    font-size: 36pt;
+    color: #fafafa;
+    font-family: futuraLight;
+    text-shadow: 2px 2px rgb(35, 43, 43, 1);
+    width: 800px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   p {
     font-size: 14pt;
   }
 
+  .background-image {
+    background-image: url(../../public/assets/kitchen.png);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 1000px;
+  }
+
   .pitch {
-    margin-top: 35px;
+    margin-top: 0px;
     margin-left: 10px;
     text-align: center;
-    width: 600px
   }
 
   button {
@@ -134,7 +150,11 @@
     cursor: pointer;
     background-color: #fb7877;
   }
-  
+
+  .safety-row {
+    width: 100%;
+    background-color: #f5e7e7;
+  }
 
   sup {
     font-size: 8pt;

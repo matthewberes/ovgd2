@@ -5,3 +5,8 @@ body {
     width: 100%;
     margin: 0;
 }
+
+@font-face {
+    font-family: futuraLight;
+    src: url(../public/assets/futuralight.ttf);
+}
