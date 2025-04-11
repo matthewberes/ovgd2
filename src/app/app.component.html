@@ -24,29 +24,32 @@
   </div>
   <div class="first-row">
     <div class="pitch">
-      <p>We specialize in deep cleaning and degreasing for all types of barbecues.</p>
-      <p>The <a href="https://www.oafc.on.ca/public-safety/seasonal-safety/summer-fire-safety">Ontario Association of Fire Chiefs</a> recommends you thoroughly clean your barbecue at least once a year.</p>
-      <p>Don't let your busy schedule ruin the safety of your cookout, call us to book an appointment today!</p>
+      <p class="pitch-header">We specialize in deep cleaning and degreasing for all types of barbecues.</p>
+      <div class="pitch-flex">
+        <div class="paragraph-container">
+          <p>The Ontario Association of Fire Chiefs recommends you thoroughly clean your barbecue at least once a year.<sup>[<a href="https://www.oafc.on.ca/public-safety/seasonal-safety/summer-fire-safety">1</a>]</sup></p>
+          <p>In Canada, 32% of all residential fires that occurred from 2015 to 2021 were caused by cooking equipment.<sup>[<a href="https://www.bflcanada.ca/article/bbqs-on-balconies-summer-fire-prevention/">2</a>]</sup></p>
+          <p>Don't let your busy schedule ruin the safety of your cookout. Call us to book an appointment today!</p>
+        </div>
+        <div>
+          <div class="carousel-container">
+            <div class="carousel banner1" [ngClass]="[currBanner == 1 ? 'banner1' : '', currBanner == 2 ? 'banner2' : '', currBanner == 3 ? 'banner3': '']">
+              <div class="left-arrow">      
+                <fa-icon [icon]="faChevronLeft" (click)="banner(-1)" tabindex="0" (keyup.enter)="banner(-1)"></fa-icon>
+              </div>
+              <div class="right-arrow">
+                <fa-icon [icon]="faChevronRight" (click)="banner(1)" tabindex="0" (keyup.enter)="banner(1)"></fa-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
   </div>
 
   <div class="review-row">
-    <div class="carousel-container">
-      <div class="carousel banner1" [ngClass]="[currBanner == 1 ? 'banner1' : '', currBanner == 2 ? 'banner2' : '', currBanner == 3 ? 'banner3': '']">
-        <div class="left-arrow">      
-          <fa-icon [icon]="faChevronLeft" (click)="banner(-1)" tabindex="0" (keyup.enter)="banner(-1)"></fa-icon>
-        </div>
-        <div class="right-arrow">
-          <fa-icon [icon]="faChevronRight" (click)="banner(1)" tabindex="0" (keyup.enter)="banner(1)"></fa-icon>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="safety-row">
-    <!-- <p>In Canada, 32% of all residential fires that occurred from 2015 to 2021 were caused by cooking equipment<sup>[<a href="https://www.bflcanada.ca/article/bbqs-on-balconies-summer-fire-prevention/">1</a>]</sup></p> -->
-    <p>t</p>
+    review row
   </div>
   
 </div>

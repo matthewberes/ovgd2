@@ -10,3 +10,13 @@ body {
     font-family: futuraLight;
     src: url(../public/assets/futuralight.ttf);
 }
+
+@font-face {
+    font-family: flink;
+    src: url(../public/assets/FlinkRegular.woff);
+}
+
+@font-face {
+    font-family: skCuriosity;
+    src: url(../public/assets/SKCuriosity-Light.ttf);
+}

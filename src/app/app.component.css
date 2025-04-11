@@ -22,7 +22,7 @@
     color: #f4f3f2;
     text-align: center;
     display: inline-block;
-    font-family: 'Rubik';
+    font-family: skCuriosity;
     font-size: 32pt;
   }
   
@@ -65,8 +65,8 @@
   .carousel {
   display: flex;
   justify-content: space-between;
-  width: 800px;
-  height: 400px;
+  width: 600px;
+  height: 350px;
   margin: 20px;
   background-position: center;align-items: center; 
   }   
@@ -89,7 +89,7 @@
     opacity: .5;
     margin: 10px;
     vertical-align: middle;
-    transform: opacity() 200ms linear;
+    transition: opacity 200ms linear;
   }
 
   fa-icon:hover {
@@ -103,6 +103,7 @@
   }
 
   h2 {
+    text-align: center;
     margin-top: 0px;
     font-size: 36pt;
     color: #fafafa;
@@ -121,7 +122,7 @@
 
   .background-image {
     background-image: url(../../public/assets/kitchen.png);
-    min-height: 400px;
+    min-height: 375px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,8 +158,29 @@
 
   .pitch{
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #f5e7e7;
+  }
+
+  .pitch-header {
+    font-size: 28pt;
+    font-family: flink;
+    margin-bottom: 0px;
+  }
+
+  .pitch-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .paragraph-container {
+    width: 500px;
+    font-size: 18pt;
+  }
+  
+  .paragraph-container p{
+    font-size: 18pt;
+    font-family: flink;
   }
 
   sup {
