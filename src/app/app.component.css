@@ -123,8 +123,8 @@
   .background-image {
     background-image: url(../../public/assets/kitchen.png);
     min-height: 375px;
-    background-attachment: fixed;
-    background-position: center;
+    /* background-attachment: fixed; */
+    background-position: 0px -250px;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 1000px;

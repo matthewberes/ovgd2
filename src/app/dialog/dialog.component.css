@@ -1,0 +1,35 @@
+.parent{
+    height: '250px';
+    width: '600px';
+    min-height: 250px;
+    background-color: #eeeeee;
+}
+
+.flex {
+    display: flex; 
+    justify-content: space-around;
+}
+
+p{
+    font-family: skCuriosity;
+    font-size: 24pt;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.buttonText {
+    margin: 0px;
+    text-align: center;
+    font-size: 2cqw;
+}
+
+.divButton {
+    border-radius: 4px;
+    text-align: center;
+    padding: 4px;
+}
+
+.divButton:hover {
+    padding: 2px;
+    border: solid 2px
+}

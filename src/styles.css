@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.e-dlg-overlay {
+    background: green;
+ }
+
 @font-face {
     font-family: futuraLight;
     src: url(../public/assets/futuralight.ttf);
@@ -20,3 +24,5 @@ body {
     font-family: skCuriosity;
     src: url(../public/assets/SKCuriosity-Light.ttf);
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

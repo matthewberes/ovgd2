@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { MatDialog } from '@angular/material/dialog';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { interval } from 'rxjs';
+import { DialogComponent } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,7 @@ import { interval } from 'rxjs';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
+  constructor(private dialog: MatDialog) { }
   ngOnInit(): void {
     interval(15000).subscribe(x => {
       this.banner(1);
@@ -23,7 +26,13 @@ export class AppComponent implements OnInit{
   faChevronRight = faChevronRight
 
   currBanner = 1;
-
+  
+  openDialog() {
+    this.dialog.open(DialogComponent, {
+      height: '250px',
+      width: '600px'
+    })
+  }
 
   banner(num: number) {
     if (this.currBanner == 1 && num == -1) {
