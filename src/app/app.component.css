@@ -190,3 +190,14 @@
   .review-row {
     height: 300px;
   }
+
+  .footer {
+    border-top: rgba(0, 0, 0, .3) 2px solid;
+    text-align: center;
+    background-color: #f4f3f2;
+  }
+
+  .footer-text {
+    margin: 5px;
+    font-size: 10pt;
+  }
