@@ -30,6 +30,7 @@ p{
 }
 
 .divButton:hover {
+    cursor: pointer;
     padding: 2px;
     border: solid 2px
 }

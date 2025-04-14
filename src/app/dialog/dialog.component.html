@@ -5,14 +5,14 @@
 <div class="parent">
     <p>Give us a call or send us an email to book an appointment!</p>
     <div class="flex">
-        <div class="divButton" tabindex="0">
+        <div class="divButton" tabindex="0" (click)="email()" (keyup.enter)="email()">
           <i class="material-symbols-outlined" style="font-size: 30pt;">
             mail
           </i>
           <p class="buttonText">Email us</p>
           <a href="mailto:email@address.com" tabindex="-1">email&#64;address.com</a>
         </div>
-        <div class="divButton" tabindex="0">
+        <div class="divButton" tabindex="0" (click)="call()" (keyup.enter)="call()">
           <i class="material-symbols-outlined" style="font-size: 30pt;">
             call
           </i>
