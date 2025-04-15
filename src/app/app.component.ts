@@ -6,10 +6,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { interval } from 'rxjs';
 import { DialogComponent } from './dialog/dialog.component';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FontAwesomeModule, CommonModule],
+  imports: [RouterOutlet, FontAwesomeModule, CommonModule, MatCardModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
