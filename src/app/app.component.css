@@ -1,12 +1,12 @@
 .head {
     height: 175px;
-    width: 100%;
     object-position: left bottom;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0,0,0,0)), url(../../public/assets/treeline2.png);
     background-position: bottom;
     background-size:cover;
     flex-wrap: wrap;
     overflow: hidden;
+    min-width: 1000px;
   }
   
   .logo {
@@ -60,16 +60,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-  }
-  
-  .carousel {
-  display: flex;
-  justify-content: space-between;
-  width: 600px;
-  height: 350px;
-  margin: 20px;
-  background-position: center;align-items: center; 
-  }   
+  }    
   
   .banner1{
     background-image: url(../../public/assets/banner1.jpg);
@@ -160,17 +151,22 @@
     width: 100%;
     height: 500px;
     background-color: #f5e7e7;
+    min-width: 1000px;
   }
 
   .pitch-header {
     font-size: 28pt;
     font-family: flink;
     margin-bottom: 0px;
+    margin-top: 15px;
+    min-width: 1000px;
   }
 
   .pitch-flex {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 1000px;
   }
 
   .paragraph-container {
@@ -187,20 +183,72 @@
     font-size: 8pt;
   }
 
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    background-position: center;
+    align-items: center; 
+    } 
+
   .review-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 300px;
+    row-gap: 20px;
+    min-width: 1000px
   }
 
   .footer {
     border-top: rgba(0, 0, 0, .3) 2px solid;
     text-align: center;
     background-color: #f4f3f2;
+    min-width: 1000px
   }
 
   .footer-text {
     margin: 5px;
     font-size: 10pt;
+  }
+
+  .review {
+    height: 175px; 
+    width: 300px;
+  }
+
+  
+  @media only screen and (max-width: 1250px){
+    
+    .background-image{
+      background-position: 0px -150px;
+    }
+
+    .pitch {
+      height: 800px
+    }
+
+    .paragraph-container {
+      flex-basis: 100%;
+    }
+
+    .carousel {
+      flex-basis: 100%;
+    }
+
+    .review-row {      
+      height: 600px;
+    }
+
+    .next-line {
+      flex-basis: 100%;
+    }
+
+    .review {
+      height: 250px; 
+      width: 375px;
+    }
   }
