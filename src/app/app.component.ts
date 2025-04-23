@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { interval } from 'rxjs';
 import { DialogComponent } from './dialog/dialog.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-root',
@@ -14,25 +14,22 @@ import {MatCardModule} from '@angular/material/card';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   constructor(private dialog: MatDialog) { }
   ngOnInit(): void {
     interval(15000).subscribe(x => {
       this.banner(1);
       console.log(this.currBanner)
-  });
+    });
   }
   title = 'ovgd';
   faChevronLeft = faChevronLeft
   faChevronRight = faChevronRight
 
   currBanner = 1;
-  
+
   openDialog() {
-    this.dialog.open(DialogComponent, {
-      height: '250px',
-      width: '600px'
-    })
+    this.dialog.open(DialogComponent, {})
   }
 
   banner(num: number) {

@@ -1,16 +1,13 @@
-.parent{
-    height: '250px';
-    width: '600px';
-    min-height: 250px;
+.parent {
     background-color: #eeeeee;
 }
 
 .flex {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
 }
 
-p{
+p {
     font-family: skCuriosity;
     font-size: 24pt;
     text-align: center;
@@ -27,10 +24,36 @@ p{
     border-radius: 4px;
     text-align: center;
     padding: 4px;
+    margin-bottom: 10px;
 }
 
 .divButton:hover {
     cursor: pointer;
     padding: 2px;
     border: solid 2px
+}
+
+.icon {
+    font-size: 30pt;
+}
+
+@media only screen and (max-width: 1250px) {
+    .parent {
+        width: auto;
+        height: auto;
+    }
+
+    p {
+        font-size: 14pt;
+    }
+
+    .buttonText {
+        margin: 0px;
+        text-align: center;
+        font-size: 1cqw;
+    }
+
+    a {
+        font-size: 8pt;
+    }
 }
